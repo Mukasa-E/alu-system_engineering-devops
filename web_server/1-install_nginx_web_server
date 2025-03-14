@@ -4,7 +4,7 @@
 apt-get update -y
 apt-get install -y nginx
 service nginx start
-echo "Holberton School" > /var/www/html/index.html
+echo "Holberton School for the win!" > /var/www/html/index.html
 ufw allow 80/tcp
 kill -HUP $(pgrep nginx)
 echo "service nginx start" >> /etc/rc.local
